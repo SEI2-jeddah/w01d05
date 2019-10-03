@@ -13,15 +13,17 @@ Step 2: Inside that IIFE, before anything else, create a new repository variable
 Assign the IIFE to superHeroesRepository.
 Since this is now going to be your Pokémon repository, move the repository variable and the entire array assigned to it inside the IIFE assigned to pokemonRepository.
 The IIFE should return an object with the following public functions assigned as keys:
-getAll: return all items. (superHeroesRepository.getAll(); should return an array of Pokémon.)
-add: add a single item. (superHeroesRepository.add(item); should add the item (technically, a superhero).)
-Make sure both functions are defined separately with the function keyword and that the return keyword returns only an object with the same names for keys as values.
+
+1. getAll: return all items. (superHeroesRepository.getAll(); should return an array of superHeroes.)
+1. add: add a single item. (superHeroesRepository.add(item); should add the item (technically, a superhero).)
+1. print: `console.log` the name of all heros. (superHeroesRepository.print()
+
+Make sure both functions are defined separately with the `function` keyword and that the return keyword returns only an object with the same names for keys as values.
 
 Step 3: Outside of and below the IIFE, you should already have a `for loop` that iterates over each Super Hero in the repository; however, since you’ve limited access to the repository array that’s inside the IIFE (so that it’s only accessible through one of the two functions returned by the IIFE), you need to update the loop code to cope with the new changes. Essentially, you need to use one of the two functions returned by the IIFE in order to retrieve the repository array.
 
 If all has gone well, console.log your respository and you should see a list of all superheros. It’s also much more stable and ready to grow into a real app!
 
-Step 4: Submit the link to your GitHub repository here. Feel free to share additional thoughts or ask questions on your submissions page.
 
 ### Task 2
 
